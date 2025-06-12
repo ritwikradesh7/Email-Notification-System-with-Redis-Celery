@@ -1,43 +1,42 @@
 # Flask + Celery + Redis Email Sender 🚀
 
 A simple, Dockerized microservice project demonstrating asynchronous task processing using **Flask**, **Celery**, and **Redis**. Tasks such as sending emails are handled in the background using Celery workers.
-
+<br>
 ---
-
+<br>
 ### ✨ Features
-Asynchronous task handling via Celery.
-Redis as the message broker.
-Fully Dockerized.
-Easily extendable to real production tasks.
-
+Asynchronous task handling via Celery.<br>
+Redis as the message broker.<br>
+Fully Dockerized.<br>
+Easily extendable to real production tasks.<br>
+<br>
 ---
-
+<br>
 ## 📦 Tech Stack
-
-- **Python 3.11**
-- **Flask** — Web API
-- **Celery** — Task Queue Manager
-- **Redis** — Message Broker
-- **Docker & Docker Compose** — Containerization
-- **Gmail SMTP** — Email service (can be mocked)
-
+<br>
+- **Python 3.11**<br>
+- **Flask** — Web API<br>
+- **Celery** — Task Queue Manager<br>
+- **Redis** — Message Broker<br>
+- **Docker & Docker Compose** — Containerization<br>
+- **Gmail SMTP** — Email service<br>
+<br>
 ---
-
+<br>
 ## 🚧 Project Structure
 .<br>
 ├── app.py # Flask application <br>
-├── tasks.py # Celery task definition
-├── Dockerfile # Dockerfile for Flask/Celery
-├── docker-compose.yml # Multi-container setup
-├── .env.example # Environment variable example
-├── .gitignore
-└── README.md # Project documentation
-
-
+├── tasks.py # Celery task definition <br>
+├── Dockerfile # Dockerfile for Flask/Celery<br>
+├── docker-compose.yml # Multi-container setup<br>
+├── .env.example # Environment variable example<br>
+├── .gitignore<br>
+└── README.md # Project documentation<br>
+<br>
 ---
-
+<br>
 ## ⚙️ Setup Instructions (macOS + Docker)
-
+<br>
 ### 1. Clone the Repository
 
 ```bash
