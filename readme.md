@@ -24,8 +24,8 @@ Easily extendable to real production tasks.
 ---
 
 ## 🚧 Project Structure
-.
-├── app.py # Flask application <br><br>
+.<br>
+├── app.py # Flask application <br>
 ├── tasks.py # Celery task definition
 ├── Dockerfile # Dockerfile for Flask/Celery
 ├── docker-compose.yml # Multi-container setup
