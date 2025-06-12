@@ -4,6 +4,7 @@ A simple, Dockerized microservice project demonstrating asynchronous task proces
 <br>
 ---
 <br>
+
 ### ✨ Features
 Asynchronous task handling via Celery.<br>
 Redis as the message broker.<br>
