@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:7  # Use Redis official image
+    ports:
+      - "6379:6379"  # Expose Redis port
+
+  web:
+    build: .  # Build the Dockerfile in the current directory
+    ports:
+      - "5001:5000"  # Expose Flask API on port 5000
+    environment:
+      - SMTP_SERVER=${SMTP_SERVER}  # SMTP details passed via environment variables
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+    depends_on:
+      - redis  # Wait for Redis to start before this service
